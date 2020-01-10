@@ -12,7 +12,10 @@ if (!path.exists){
   fs.writeFileSync('./onduty.json', '[]')
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86f588332a47de4b6b8c4f67cb998a24a16120c3
 var onduty = JSON.parse(fs.readFileSync("./onduty.json"));
 
 var app = express();
