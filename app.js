@@ -12,17 +12,12 @@ if (!path.exists){
   fs.writeFileSync('./onduty.json', '[]')
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 86f588332a47de4b6b8c4f67cb998a24a16120c3
 var onduty = JSON.parse(fs.readFileSync("./onduty.json"));
 
 var app = express();
 
-// app.use('/', express.static(__dirname + '/public0'));
 app.use('/:num', express.static(__dirname + '/public'));
-
 
 app.get('/', (req, res) => {
   let err = new Error(`Error! Table number isn't declared! Go to http://xxx.xxx.xxx.xxx/[table_number]`);
